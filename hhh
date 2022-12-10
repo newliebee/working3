@@ -18,7 +18,7 @@ NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
  Title = "Shield bypass is loaded";
- Text = "it loaded my nigga";
+ Text = "Toggle Key is Z";
  Icon = "";
  Duration = 5;
  Button1 = "okay";
@@ -36,7 +36,7 @@ end)
 game:GetService("RunService").Heartbeat:Connect(function(step)
   if enabled == true then
     for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
-      plr.BlockingNew.Value = not(enabled)
+      plr.Blocking.Value = not(enabled)
     end
   end
 end);
