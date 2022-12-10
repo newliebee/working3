@@ -15,9 +15,9 @@ end)
 game:GetService("RunService").Heartbeat:Connect(function(step)
   if enabled == true then
     for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
-      plr.Blocking.Value = not(enabled)
+      plr.BlockingNew.Value = not(enabled)
     end
   end
 end);
 
-Notify({Title="Shield Bypass loaded";Text="Toggle is Z"..game.Players.LocalPlayer.Name})
+Notify({Title="Hitbox Expander Loaded";Text="Toggle is Z"..game.Players.LocalPlayer.Name})
